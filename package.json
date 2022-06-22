@@ -8,6 +8,7 @@
   "scripts": {
     "watch": "ts-node-dev --respawn -- src/index.ts",
     "start": "ts-node-dev --respawn -- src/web3.ts",
+    "IncreaseRAM": "set NODE_OPTIONS=--max_old_space_size=24576 &&  yarn watch",
     "build": "tsc -p ."
   },
   "dependencies": {
